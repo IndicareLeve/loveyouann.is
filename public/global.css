@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ole&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--pink-300: #ffa6c1;
+}
+
+main {
+	background-color: var(--pink-300);
+	height: 100vh;
+	display: flex;
+	color: var(--yellow-100);
+	font-family: Ole;
+	overflow: hidden;
+}
+
+span {
+	font-size: 30vW;
+	animation: colortext 5s linear infinite;
+}
+
+span:nth-child(1) {
+	animation-delay: -1s;
+}
+
+span:nth-child(2) {
+	animation-delay: -2s;
+}
+
+.text-left {
+	text-align: left;
+	transform: rotate(-22deg);
+}
+
+.text-right {
+	text-align: right;
+	transform: rotate(-22deg);
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-big {
+	font-size: 45vW;
+}
+
+.grid {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"row1"
+		"row2"
+		"row3"
+		"row4";
+}
+
+.flex {
+	display: flex;
+}
+
+.row1 {
+	grid-area: row1;
+}
+
+.row2 {
+	grid-area: row2;
+}
+
+.row3 {
+	grid-area: row3;
+}
+
+
+.row4 {
+	grid-area: row4;
+}
+
+@keyframes colortext {
+	0% {
+		color: #ff75b0;
+	}
+	20% {
+		color: #fa9abe;
+	}
+	40% {
+		color: #fdddfb;
+	}
+	60% {
+		color: #e6a4f4;
+	}
+    80% {
+		color: #b1f1db;
+    }
+	100% {
+		color: #ff75b0;
+	}
+  }
+  
