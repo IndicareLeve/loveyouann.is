@@ -79,6 +79,7 @@ span:nth-child(2) {
 
 .row4 {
 	grid-area: row4;
+	padding-bottom: 0.2em;
 }
 
 @keyframes colortext {
