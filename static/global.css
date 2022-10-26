@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ole&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
 
 * {
 	margin: 0;
@@ -15,12 +16,12 @@ main {
 	height: 100vh;
 	display: flex;
 	color: var(--yellow-100);
-	font-family: Ole;
+	font-family: Fuzzy Bubbles;
 	overflow: hidden;
 }
 
 span {
-	font-size: 30vW;
+	font-size: 20vW;
 	animation: colortext 5s linear infinite;
 }
 
@@ -47,7 +48,7 @@ span:nth-child(2) {
 }
 
 .text-big {
-	font-size: 45vW;
+	font-size: 25vW;
 }
 
 .grid {
@@ -62,6 +63,18 @@ span:nth-child(2) {
 
 .flex {
 	display: flex;
+}
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
 }
 
 .row1 {
