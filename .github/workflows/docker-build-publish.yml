@@ -15,7 +15,7 @@ jobs:
     steps:
     - name: Generate build ID
       id: prep
-      run: echo "BUILD_ID$(date +%s)" >> $GITHUB_OUTPUT 
+      run: echo "BUILD_ID=$(date +%s)" >> $GITHUB_OUTPUT 
 
     - name: Checkout
       uses: actions/checkout@v3
